@@ -17,6 +17,8 @@ These documents apply to software that:
 
 - [Privacy Policy](./privacy-policy.md)
 - [End User License Agreement](./eula.md)
+- [Connect to QuickBooks Online](./connect.md)
+- [Disconnect from QuickBooks Online](./disconnect.md)
 
 ## Contact
 
