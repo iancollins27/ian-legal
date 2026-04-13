@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OAuth Callback</title>
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, sans-serif; max-width: 640px; margin: 4rem auto; padding: 0 1rem; color: #222; }
+    h1 { font-size: 1.25rem; }
+    p { line-height: 1.5; }
+    code { background: #f4f4f4; padding: 0 0.25rem; border-radius: 3px; }
+  </style>
+  <script>
+    (function () {
+      var qs = window.location.search || "";
+      var target = "http://localhost:8080/callback" + qs;
+      window.location.replace(target);
+    })();
+  </script>
+</head>
+<body>
+  <h1>Redirecting to local authorization server&hellip;</h1>
+  <p>
+    This page is the HTTPS endpoint registered with Intuit for OAuth redirects.
+    It forwards the authorization callback to the local authorization server
+    running at <code>http://localhost:8080/callback</code> on your machine.
+  </p>
+  <p>
+    If this page does not redirect automatically, JavaScript is disabled in
+    your browser. Enable JavaScript and try again, or contact
+    <a href="mailto:collins.ian27@gmail.com">collins.ian27@gmail.com</a>.
+  </p>
+  <noscript>
+    <p><strong>JavaScript is required for the OAuth redirect to complete.</strong></p>
+  </noscript>
+</body>
+</html>
